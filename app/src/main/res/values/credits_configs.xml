@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. Jahir Fiquitiva
+  ~
+  ~ Licensed under the CreativeCommons Attribution-ShareAlike
+  ~ 4.0 International License. You may not use this file except in compliance
+  ~ with the License. You may obtain a copy of the License at
+  ~
+  ~    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="credits_photos" formatted="false" tools:ignore="TypographyDashes">
+        <item>https://aospextended.com/img/ishubhamsingh.jpg</item>
+        <item>https://aospextended.com/img/firelord.jpg</item>
+        <item>https://aospextended.com/img/amol.jpg</item>
+        <item>https://i.imgur.com/VluriWf.png</item>
+    </string-array>
+
+    <string-array name="credits_titles">
+        <item>Shubham Singh</item>
+        <item>Aman Kumar</item>
+        <item>Amol Amrit</item>
+        <item>Gaurav Singh</item>
+    </string-array>
+
+    <string-array name="credits_descriptions">
+        <item>Owner and Lead Developer</item>
+        <item>Developer</item>
+        <item>Developer and Moderator</item>
+        <item>Moderator and Graphic Designer</item>
+    </string-array>
+
+    <string-array name="credits_buttons">
+        <item>Facebook|Github|Google+</item>
+        <item>Facebook|Github|Google+</item>
+        <item>Facebook|Github|Google+</item>
+        <item>Twitter|Github</item>
+    </string-array>
+
+    <string-array name="credits_links">
+        <item>https://facebook.com/ishubhamsingh|https://github.com/ishubhamsingh|https://plus.google.com/+shubhamsingh</item>
+        <item>https://facebook.com/aman.FireLord|https://github.com/FireLord1|https://plus.google.com/+AmanKumarFireLord1</item>
+        <item>https://facebook.com/amol.amrit|https://github.com/AmolAmrit|https://plus.google.com/+AmolAmrit</item>
+        <item>https://twitter.com/allstargauravs|https://github.com/allstargaurav</item>
+    </string-array>
+</resources>
