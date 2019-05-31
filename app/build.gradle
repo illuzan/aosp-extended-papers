@@ -50,11 +50,11 @@ android {
                                 onesignal_google_project_number: "487365593202"]
 
 
-        applicationId "jahirfiquitiva.apps.frames.sample"
+        applicationId "com.aospextended.aexpapers"
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
-        versionCode 1
-        versionName '6.0'
+        versionCode 3
+        versionName '6.2'
         vectorDrawables.useSupportLibrary = true
         proguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
         consumerProguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
@@ -81,11 +81,16 @@ android {
         pickFirst 'META-INF/library_debug.kotlin_module'
         pickFirst 'META-INF/library_release.kotlin_module'
     }
+	
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     // Frames
-    implementation('com.jahirfiquitiva:Frames:2.6.1@aar') {
+    implementation('com.jahirfiquitiva:Frames:2.6.8@aar') {
         transitive = true
     }
     implementation libraries.oneSignal

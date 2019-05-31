@@ -15,6 +15,7 @@
   ~ limitations under the License.
   -->
 <resources>
-    <version title="v6.0" />
-    <item text="Initial Release" />
+    <version title="v6.1" />
+    <item text="Fixed Package Name" />
+    <item text="Dashboard related fixes" />
 </resources>
