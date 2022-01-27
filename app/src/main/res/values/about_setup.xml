@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingTranslation">
+    <string-array name="credits_photos" formatted="false" tools:ignore="TypographyDashes">
+        <item>https://github.com/ishubhamsingh.png</item>
+        <item>https://github.com/amolamrit.png</item>
+        <item>https://github.com/firelord.png</item>
+        <item>https://github.com/illuzan.png</item>
+        <item>https://github.com/sb6596.png</item>
+        <item>https://github.com/SagarMakhar.png</item>
+    </string-array>
+
+    <string-array name="credits_titles">
+        <item>Shubham Singh</item>
+        <item>Amol Amrit</item>
+        <item>Aman Kumar</item>
+        <item>Gaurav Singh</item>
+        <item>Shubham Bhise</item>
+        <item>Sagar Makhar</item>
+    </string-array>
+
+    <string-array name="credits_descriptions">
+        <item>Founder &amp; Lead developer</item>
+        <item>Moderator &amp; Developer</item>
+        <item>SysAdmin</item>
+        <item>Developer &amp; Designer</item>
+        <item>Developer</item>
+        <item>Developer</item>
+    </string-array>
+
+    <string-array name="credits_buttons">
+        <item>Github</item>
+        <item>Github</item>
+        <item>Github</item>
+        <item>Twitter|Github</item>
+        <item>Github</item>
+        <item>Github</item>
+    </string-array>
+
+    <string-array name="credits_links">
+        <item>https://github.com/ishubhamsingh</item>
+        <item>https://github.com/amolamrit</item>
+        <item>https://github.com/firelord</item>
+        <item>https://twitter.com/illuzan|https://github.com/illuzan</item>
+        <item>https://github.com/sb6596</item>
+        <item>https://github.com/SagarMakhar</item>
+    </string-array>
+</resources>

@@ -1,31 +1,26 @@
-/*
- * Copyright (c) 2018. Jahir Fiquitiva
- *
- * Licensed under the CreativeCommons Attribution-ShareAlike
- * 4.0 International License. You may not use this file except in compliance
- * with the License. You may obtain a copy of the License at
- *
- *    http://creativecommons.org/licenses/by-sa/4.0/legalcode
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.aospextended.aexpapers
 
-import android.app.Application
+import dev.jahir.frames.ui.FramesApplication
 import com.onesignal.OneSignal
+import com.onesignal.OSNotificationReceivedEvent
+import dev.jahir.frames.extensions.context.preferences
 
-class MyApplication : Application() {
+class MyApplication : FramesApplication() {
     override fun onCreate() {
         super.onCreate()
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId(BuildConfig.ONESIGNAL_APP_ID);
 
-        OneSignal.startInit(this)
-                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-                .unsubscribeWhenNotificationsAreDisabled(true)
-                .init()
+        OneSignal.setNotificationWillShowInForegroundHandler { notificationReceivedEvent: OSNotificationReceivedEvent ->
+            notificationReceivedEvent.complete(
+                if (preferences.notificationsEnabled)
+                    notificationReceivedEvent.notification
+                else null
+            )
+        }
 
+        OneSignal.unsubscribeWhenNotificationsAreDisabled(true)
+        OneSignal.pauseInAppMessages(true)
+        OneSignal.setLocationShared(false)
     }
 }
